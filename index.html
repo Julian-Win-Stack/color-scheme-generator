@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Color Scheme Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <section class="select">
+                <label for="color-pick" class="hide-labels">Click to select the color</label>
+                <input type="color" id="color-pick">
+                <label for="color-scheme" class="hide-labels">Click to select the color scheme</label>
+                <select id="color-scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="color-btn">Get color scheme</button>
+            </section>
+
+            <section class="color-class">
+                <div class="color-box"></div>
+                <div class="color-box"></div>
+                <div class="color-box"></div>
+                <div class="color-box"></div>
+                <div class="color-box"></div>
+            </section>
+
+            <section class="color-code-class">
+                <div class="color-codes"></div>
+                <div class="color-codes"></div>
+                <div class="color-codes"></div>
+                <div class="color-codes"></div>
+                <div class="color-codes"></div>
+            </section>
+            <div id="copy-message"></div>
+            <script src="index.js"></script> 
+        </main>
+    </body>
+</html>
